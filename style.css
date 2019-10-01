@@ -1,76 +1,156 @@
+/*========================================*/
+/* ----- Clear some Default styles ----- */
+/*======================================*/
 * {
   margin: 0;
   padding: 0;
 }
-
-/* ----- NAV styling ----- */
-.navbar {
-  height: 36px;
-  width: 980px;
-  position: absolute;
-  top: 80px;
-  left: 390px;
+/*====================================*/
+/* ----- General Parent styles ----- */
+/*==================================*/
+.main-section,
+.aside-section,
+.footer-section {
+  margin: 0 auto 2px;
+  max-width: 1440px;
+  min-width: 1024px;
 }
-
-.navbar ul {
-  background: linear-gradient(#999 40%, #444);
-  border-radius: 4px;
-  box-shadow: 0px 0px 1px 1px #777;
-  display: flex;
-  flex: auto;
-  height: 100%;
-}
-
-.navbar ul li {
-  display: flex;
-  list-style: none;
-  position: relative;
-  width: 103px;
-}
-
-.navbar ul li a {
-  height: 100% ;
-  width: 100%;
-}
-
-.navbar ul li a::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 2px;
-  height: 36px;
-  background: linear-gradient(#aaa 40%, #333);
-}
-
-.before-li::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 2px;
-  height: 36px;
-  background: linear-gradient(#bbb2 40%, #555);
-}
-
-.before-li:hover::before { display: none; }
-
-.navbar ul li a:hover {
-  background: linear-gradient(#777 40%, #222);
-}
-
-.navbar ul li a:first-child:hover {
-  border-radius: 4px 0 0 4px;
-}
-
-.navbar ul li a:hover::after { display: none; }
-
-.navbar ul li a span { /*display: none;*/}
-
-/* ----- Main Section styling ----- */
+/*=================================*/
+/* ----- MAINsection styles ----- */
+/*===============================*/
 .main-section {
+  align-items: center;
+  background: linear-gradient(90deg, #bbb, #ddd);
   background-image: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg);
   background-position: bottom;
+  display: flex;
+  flex-flow: column nowrap;
   height: 538px;
-  margin: 0 auto;
-  width: 1440px;
+  justify-content: center;
 }
+/*============================*/
+/* ----- N A V bar styles ----- */
+/*==========================*/
+.main-section {
+    
+}
+.main-section nav {
+  width: 980px;
+  height: 36px;
+}
+.main-section nav ul {
+  display: flex;
+  background: linear-gradient(#999, #444);
+  border-radius: 4px;
+  height: 100%;
+}
+.main-section nav ul li {
+  display: flex;
+  background: url(http://images.apple.com/global/nav/images/globalnav.png) no-repeat -100px 0px;
+  list-style: none;
+}
+.main-section nav ul li:first-child {
+  background-position: 0 0;
+}
+.main-section nav ul li:hover:first-child { background-position: 0px 0px; }
+.main-section nav ul li a {
+  width: 103px;
+}
+/* ----- nav button Text-IMAGES ----- */
+.main-section nav ul li:nth-child(1) a {
+  background-image: url(http://images.apple.com/global/nav/images/globalnav_text.png);
+  width: 101px;
+}
+/*========================================*/
+/* ----- Headers, MAIN child elements ----- */
+/*=====================================*/
+.main-section h1,
+.main-section h2,
+.main-section h3 { width: 980px; }
+.main-section h1 {
+  height: 104px;
+  padding-top: 15px;
+}
+.main-section h1 a {
+  background-image: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/your_verse_title_medium_2x.png);
+  background-size: cover;
+  height: 93px;
+}
+.main-section h2 {
+  height: 82px;
+  padding-bottom: 20px;
+}
+.main-section h2 a {
+  background-image: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/your_verse_subhead_medium_2x.png);
+  background-size: cover;
+  height: 82px;
+}
+.main-section h3 { height: 64px; }
+.main-section h3 a {
+  background-image: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/cta_your_verse_27pt.png);
+  background-size: cover;
+  background-position: 0 1px;
+  height: 34px;
+}
+.main-section h3 a:hover { background-position: 0 -31px; }
+.h-a {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+/*============================*/
+/* ----- ASIDE styling ----- */
+/*==========================*/
+.aside-section {
+  border: 1px dotted #777;
+  display: flex;
+  height: 200px;
+}
+.aside-section a {
+  background: #cdc5;
+  margin: 0 1px;
+  overflow: hidden;
+  width: 25%; /*364px t*/
+}
+.aside-section a:hover { background: #cfc5; }
+.aside-section a img {
+  width: 364px;
+}
+/*=============================*/
+/* ----- FOOTER styling ----- */
+/*===========================*/
+.footer-section {
+  box-sizing: border-box;
+  color: #6e6e6e;
+  font: 11px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  position: relative;
+  height: 90px;
+  width: 980px;
+}
+.footer-section a {
+  color: #08c;
+  text-decoration: none;
+}
+.footer-section a:hover { text-decoration: underline; }
+.footer-section p:first-child {
+  padding-top: 20px;
+  width: 480;
+}
+.footer-section p:last-child {
+  position: absolute;
+  bottom: 26px;
+  width: 480px;
+}
+.footer-section ul {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 498px;
+}
+.footer-section ul li {
+  height: 12px;
+  list-style: none;
+  padding: 0 4.5px;
+}
+.footer-section ul li:not(:last-child) { border-right: 1px solid #bbb; }
