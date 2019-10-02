@@ -7,9 +7,9 @@ Technologies used: **HTML** and **CSS**.
 
 
 Githack Clone link:
-* [Production](https://rawcdn.githack.com/NewIncome/mv_Pj4-Build-wBckGndNGts/edit/feature/index.html)
+* [Production](https://rawcdn.githack.com/NewIncome/mv_Pj4-Build-wBckGndNGts/5bd83a3c29b0e1a3ff4355450d6587a5a511948a/index.html)
 
-* [Development](https://raw.githack.com/NewIncome/mv_Pj4-Build-wBckGndNGts/edit/feature/index.html)
+* [Development](https://raw.githack.com/NewIncome/mv_Pj4-Build-wBckGndNGts/feature/index.html)
 
 
 
