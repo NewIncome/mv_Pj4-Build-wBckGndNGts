@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
 }
+
 /*====================================*/
 /* ----- General Parent styles ----- */
 /*==================================*/
@@ -15,6 +16,7 @@
   max-width: 1440px;
   min-width: 1024px;
 }
+
 /*=================================*/
 /* ----- MAINsection styles ----- */
 /*===============================*/
@@ -28,39 +30,98 @@
   height: 538px;
   justify-content: center;
 }
+
 /*============================*/
 /* ----- N A V bar styles ----- */
 /*==========================*/
-.main-section {
-    
+.before-li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 36px;
+  background: linear-gradient(#bbb2 40%, #555);
 }
+
+.before-li:hover::before { display: none; }
+
 .main-section nav {
   width: 980px;
   height: 36px;
 }
+
 .main-section nav ul {
   display: flex;
-  background: linear-gradient(#999, #444);
+  background: linear-gradient(#999 40%, #444);
   border-radius: 4px;
+  box-shadow: 0px 0px 1px 1px #777;
   height: 100%;
+  position: relative;
 }
+
 .main-section nav ul li {
   display: flex;
-  background: url(http://images.apple.com/global/nav/images/globalnav.png) no-repeat -100px 0px;
+  position: relative;
+  /*background: url(http://images.apple.com/global/nav/images/globalnav.png) no-repeat -100px 0px;*/
   list-style: none;
 }
-.main-section nav ul li:first-child {
-  background-position: 0 0;
+
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 36px;
+  background: linear-gradient(#aaa 40%, #333);
 }
-.main-section nav ul li:hover:first-child { background-position: 0px 0px; }
+
+.navbar ul li a:hover::after { display: none; }
+
+.navbar ul li:hover:not(:last-child) { background: linear-gradient(#777 40%, #222); }
+
+.navbar ul li:hover:first-child {
+  background: linear-gradient(#777 40%, #222);
+  border-radius: 4px;
+}
+
 .main-section nav ul li a {
-  width: 103px;
+  max-width: 103px;
+  min-width: 100px;
 }
+
 /* ----- nav button Text-IMAGES ----- */
-.main-section nav ul li:nth-child(1) a {
-  background-image: url(http://images.apple.com/global/nav/images/globalnav_text.png);
+.main-section nav ul li:nth-child(1) a { background: url(http://images.apple.com/global/nav/images/globalnav_text.png) -27px 3px; }
+.main-section nav ul li:nth-child(2) a { background: url(http://images.apple.com/global/nav/images/globalnav_text.png) -27px -26px; }
+.main-section nav ul li:nth-child(3) a { background: url(http://images.apple.com/global/nav/images/globalnav_text.png) -27px -55px; }
+.main-section nav ul li:nth-child(4) a { background: url(http://images.apple.com/global/nav/images/globalnav_text.png) -27px -86px; }
+.main-section nav ul li:nth-child(5) a { background: url(http://images.apple.com/global/nav/images/globalnav_text.png) -27px -116px; }
+.main-section nav ul li:nth-child(6) a { background: url(http://images.apple.com/global/nav/images/globalnav_text.png) -27px -146px; }
+.main-section nav ul li:nth-child(7) a { background: url(http://images.apple.com/global/nav/images/globalnav_text.png) -27px -176px; }
+.main-section nav ul li:nth-child(8) a { background: url(http://images.apple.com/global/nav/images/globalnav_text.png) -27px -206px; }
+
+/* ----- SearchBar ----- */
+/* .main-section nav ul li:last-child */
+input[type="text"] {
+  background: url(./images/search-w.png) no-repeat 4px 1px;
+  background-size: 14px;
+  border-top: 2px solid #555;
+  border-radius: 18px;
+  height: 16px;
+  margin: auto 0 auto 10%;
+  padding: 0 21px;
   width: 101px;
+  max-width: 120px;
 }
+input[type="text"]:focus {
+  outline: none;
+  background: #fff url(./images/search-b.png) no-repeat 4px 1px;
+  background-size: 14px;
+  margin: auto 0 auto 4%;
+  width: 120px;
+  transition: width 2s 0.5s ease-in-out, margin 2s 0.5s ease-in-out;
+}
+.main-section nav ul li a span { display: none;}
 /*========================================*/
 /* ----- Headers, MAIN child elements ----- */
 /*=====================================*/
