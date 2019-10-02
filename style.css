@@ -92,16 +92,23 @@
 
 /* ----- nav button Text-IMAGES ----- */
 .main-section nav ul li:nth-child(1) a { background: url(http://images.apple.com/global/nav/images/globalnav_text.png) -27px 3px; }
+
 .main-section nav ul li:nth-child(2) a { background: url(http://images.apple.com/global/nav/images/globalnav_text.png) -27px -26px; }
+
 .main-section nav ul li:nth-child(3) a { background: url(http://images.apple.com/global/nav/images/globalnav_text.png) -27px -55px; }
+
 .main-section nav ul li:nth-child(4) a { background: url(http://images.apple.com/global/nav/images/globalnav_text.png) -27px -86px; }
+
 .main-section nav ul li:nth-child(5) a { background: url(http://images.apple.com/global/nav/images/globalnav_text.png) -27px -116px; }
+
 .main-section nav ul li:nth-child(6) a { background: url(http://images.apple.com/global/nav/images/globalnav_text.png) -27px -146px; }
+
 .main-section nav ul li:nth-child(7) a { background: url(http://images.apple.com/global/nav/images/globalnav_text.png) -27px -176px; }
+
 .main-section nav ul li:nth-child(8) a { background: url(http://images.apple.com/global/nav/images/globalnav_text.png) -27px -206px; }
 
+
 /* ----- SearchBar ----- */
-/* .main-section nav ul li:last-child */
 input[type="text"] {
   background: url(./images/search-w.png) no-repeat 4px 1px;
   background-size: 14px;
@@ -113,6 +120,7 @@ input[type="text"] {
   width: 101px;
   max-width: 120px;
 }
+
 input[type="text"]:focus {
   outline: none;
   background: #fff url(./images/search-b.png) no-repeat 4px 1px;
@@ -121,6 +129,7 @@ input[type="text"]:focus {
   width: 120px;
   transition: width 2s 0.5s ease-in-out, margin 2s 0.5s ease-in-out;
 }
+
 .main-section nav ul li a span { display: none;}
 /*========================================*/
 /* ----- Headers, MAIN child elements ----- */
@@ -128,37 +137,46 @@ input[type="text"]:focus {
 .main-section h1,
 .main-section h2,
 .main-section h3 { width: 980px; }
+
 .main-section h1 {
   height: 104px;
   padding-top: 15px;
 }
+
 .main-section h1 a {
   background-image: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/your_verse_title_medium_2x.png);
   background-size: cover;
   height: 93px;
 }
+
 .main-section h2 {
   height: 82px;
   padding-bottom: 20px;
 }
+
 .main-section h2 a {
   background-image: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/your_verse_subhead_medium_2x.png);
   background-size: cover;
   height: 82px;
 }
+
 .main-section h3 { height: 64px; }
+
 .main-section h3 a {
   background-image: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/cta_your_verse_27pt.png);
   background-size: cover;
   background-position: 0 1px;
   height: 34px;
 }
+
 .main-section h3 a:hover { background-position: 0 -31px; }
+
 .h-a {
   display: block;
   overflow: hidden;
   width: 100%;
 }
+
 /*============================*/
 /* ----- ASIDE styling ----- */
 /*==========================*/
@@ -167,16 +185,19 @@ input[type="text"]:focus {
   display: flex;
   height: 200px;
 }
+
 .aside-section a {
   background: #cdc5;
   margin: 0 1px;
   overflow: hidden;
   width: 25%; /*364px t*/
 }
+
 .aside-section a:hover { background: #cfc5; }
 .aside-section a img {
   width: 364px;
 }
+
 /*=============================*/
 /* ----- FOOTER styling ----- */
 /*===========================*/
@@ -188,20 +209,24 @@ input[type="text"]:focus {
   height: 90px;
   width: 980px;
 }
+
 .footer-section a {
   color: #08c;
   text-decoration: none;
 }
+
 .footer-section a:hover { text-decoration: underline; }
 .footer-section p:first-child {
   padding-top: 20px;
   width: 480;
 }
+
 .footer-section p:last-child {
   position: absolute;
   bottom: 26px;
   width: 480px;
 }
+
 .footer-section ul {
   display: flex;
   position: absolute;
@@ -209,9 +234,11 @@ input[type="text"]:focus {
   right: 0;
   width: 498px;
 }
+
 .footer-section ul li {
   height: 12px;
   list-style: none;
   padding: 0 4.5px;
 }
+
 .footer-section ul li:not(:last-child) { border-right: 1px solid #bbb; }
