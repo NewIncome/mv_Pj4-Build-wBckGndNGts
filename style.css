@@ -46,7 +46,7 @@
 .before-li::before {
   content: "";
   position: absolute;
-  top: 0px;
+  top: 0;
   width: 2px;
   height: 36px;
   background: linear-gradient(#bbb2 40%, #555);
@@ -71,7 +71,7 @@
   display: flex;
   background: linear-gradient(#999 40%, #444);
   border-radius: 4px;
-  box-shadow: 0px 0px 1px 1px #777;
+  box-shadow: 0 0 1px 1px #777;
   height: 100%;
   position: relative;
 }
@@ -116,14 +116,10 @@
   width: 25%;
 }
 
-.aside-section a:hover { background: #cfc5; }
-
 .footer-section a {
   color: #08c;
   text-decoration: none;
 }
-
-.footer-section a:hover { text-decoration: underline; }
 
 .main-section h1 a {
   background-image: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/your_verse_title_medium_2x.png);
@@ -148,6 +144,12 @@
   max-width: 103px;
   min-width: 100px;
 }
+
+.aside-section a:hover { background: #cfc5; }
+
+.footer-section a:hover { text-decoration: underline; }
+
+.main-section h3 a:hover { background-position: 0 -31px; }
 
 /* ----- nav button Text-IMAGES ----- */
 .main-section nav ul li:nth-child(1) a { background: url(http://images.apple.com/global/nav/images/globalnav_text.png) -27px 3px; }
@@ -214,8 +216,6 @@ input[type="text"]:focus {
 }
 
 .main-section h3 { height: 64px; }
-
-.main-section h3 a:hover { background-position: 0 -31px; }
 
 .h-a {
   display: block;
