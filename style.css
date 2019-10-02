@@ -1,14 +1,15 @@
-/*========================================*/
-/* ----- Clear some Default styles ----- */
-/*======================================*/
+
+/* ======================================== */
+/* ----- Clear some Default styles -----   */
+/* ====================================== */
 * {
   margin: 0;
   padding: 0;
 }
 
-/*====================================*/
-/* ----- General Parent styles ----- */
-/*==================================*/
+/* ==================================== */
+/* ----- General Parent styles -----   */
+/* ================================== */
 .main-section,
 .aside-section,
 .footer-section {
@@ -17,9 +18,9 @@
   min-width: 1024px;
 }
 
-/*=================================*/
-/* ----- MAINsection styles ----- */
-/*===============================*/
+/* ================================= */
+/* ----- MAINsection styles -----   */
+/* =============================== */
 .main-section {
   align-items: center;
   background: linear-gradient(90deg, #bbb, #ddd);
@@ -31,9 +32,9 @@
   justify-content: center;
 }
 
-/*============================*/
+/* ============================= */
 /* ----- N A V bar styles ----- */
-/*==========================*/
+/* =========================== */
 .before-li::before {
   content: "";
   position: absolute;
@@ -62,7 +63,6 @@
 .main-section nav ul li {
   display: flex;
   position: relative;
-  /*background: url(http://images.apple.com/global/nav/images/globalnav.png) no-repeat -100px 0px;*/
   list-style: none;
 }
 
@@ -130,10 +130,11 @@ input[type="text"]:focus {
   transition: width 2s 0.2s ease-in-out, margin 2s 0.2s ease-in-out;
 }
 
-.main-section nav ul li a span { display: none;}
-/*========================================*/
+.main-section nav ul li a span { display: none; }
+
+/* ========================================= */
 /* ----- Headers, MAIN child elements ----- */
-/*=====================================*/
+/* ======================================= */
 .main-section h1,
 .main-section h2,
 .main-section h3 { width: 980px; }
@@ -181,9 +182,9 @@ input[type="text"]:focus {
   display: none;
 }
 
-/*============================*/
-/* ----- ASIDE styling ----- */
-/*==========================*/
+/* ============================ */
+/* ----- ASIDE styling -----   */
+/* ========================== */
 .aside-section {
   border: 1px dotted #777;
   display: flex;
@@ -202,9 +203,9 @@ input[type="text"]:focus {
   width: 364px;
 }
 
-/*=============================*/
-/* ----- FOOTER styling ----- */
-/*===========================*/
+/* ============================= */
+/* ----- FOOTER styling -----   */
+/* =========================== */
 .footer-section {
   box-sizing: border-box;
   color: #6e6e6e;
